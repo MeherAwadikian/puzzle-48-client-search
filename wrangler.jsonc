@@ -1,0 +1,7 @@
+{
+  "name": "puzzle-48-client-search",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forge Library — instant client-side search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Forge Library</h1>
+      <p class="sub">Instant fuzzy search over <b id="count">…</b> books — runs entirely in your browser, no server, works offline.</p>
+    </header>
+
+    <div class="search">
+      <input id="q" type="search" placeholder="Search titles or categories (typos ok)…" autocomplete="off" autofocus />
+      <span class="stats" id="stats"></span>
+    </div>
+
+    <ul id="results" class="results" aria-live="polite"></ul>
+    <p id="empty" class="empty" hidden>No matches.</p>
+  </div>
+
+  <!-- vendored, no CDN at runtime -->
+  <script src="fuse.min.js"></script>
+  <script src="data.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
